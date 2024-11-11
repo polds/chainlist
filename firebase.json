@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "rpc-smart-proxy",
     "target": "chainlist-rpc-smart-proxy",
     "source": ".",
     "ignore": [
