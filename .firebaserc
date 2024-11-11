@@ -1,6 +1,15 @@
 {
   "projects": {
     "default": "rpc-smart-proxy"
-  }
+  },
+  "targets": {
+    "rpc-smart-proxy": {
+      "hosting": {
+        "chainlist-rpc-smart-proxy": [
+          "chainlist-rpc-smart-proxy"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
-

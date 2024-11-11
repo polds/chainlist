@@ -23,12 +23,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
       - run: npm ci && npm run build
-      # - uses: FirebaseExtended/action-hosting-deploy@v0
-      #   with:
-      #     repoToken: '${{ secrets.GITHUB_TOKEN }}'
-      #     firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RPC_SMART_PROXY }}'
-      #     channelId: live
-      #     projectId: rpc-smart-proxy
-      #     target: chainlist-rpc-smart-proxy
-      #   env:
-      #     FIREBASE_CLI_EXPERIMENTS: webframeworks
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RPC_SMART_PROXY }}'
+          channelId: live
+          projectId: rpc-smart-proxy
+          target: chainlist-rpc-smart-proxy
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
