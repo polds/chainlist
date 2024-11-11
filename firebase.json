@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "site": "chainlist-rpc-smart-proxy",
+    "site": "rpc-smart-proxy",
+    "target": "chainlist-rpc-smart-proxy",
     "source": ".",
     "ignore": [
       "firebase.json",
